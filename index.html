@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeTag | Instant Health ID</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background-color: #000; color: #d4af37; overflow-x: hidden;}
+    header {padding: 30px 10%; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.9); box-shadow: 0 2px 10px rgba(212,175,55,0.2); position: sticky; top: 0; z-index: 100;}
+    .logo {font-size: 1.8rem; font-weight: 700; color: #d4af37; letter-spacing: 1px;}
+    nav a {margin-left: 25px; text-decoration: none; color: #d4af37; font-weight: 500; transition: color 0.3s ease;}
+    nav a:hover {color: #fff;}
+
+    section {padding: 80px 10%; text-align: center;}
+    .hero {min-height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(180deg, #000, #1a1a1a);}
+    .hero h1 {font-size: 3rem; color: #d4af37; text-shadow: 0 0 15px rgba(212,175,55,0.6);}
+    .hero p {margin-top: 15px; font-size: 1.2rem; color: #fff; max-width: 700px;}
+    .hero button {margin-top: 30px; padding: 12px 30px; border: 2px solid #d4af37; border-radius: 25px; background: transparent; color: #d4af37; font-weight: 600; cursor: pointer; transition: all 0.3s ease;}
+    .hero button:hover {background: #d4af37; color: #000;}
+
+    .section-title {font-size: 2rem; font-weight: 700; color: #d4af37; margin-bottom: 30px; position: relative;}
+    .section-title::after {content: ''; width: 80px; height: 3px; background: #d4af37; display: block; margin: 10px auto 0; border-radius: 2px;}
+
+    .content {max-width: 800px; margin: 0 auto; font-size: 1rem; color: #fff; line-height: 1.8;}
+
+    .founder {display: flex; flex-direction: column; align-items: center;}
+    .founder img {width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(212,175,55,0.4);}
+    .founder h3 {font-size: 1.4rem; color: #d4af37; margin-bottom: 5px;}
+    .founder p {max-width: 600px; color: #ddd;}
+
+    footer {background: #111; color: #d4af37; text-align: center; padding: 30px 10%; margin-top: 60px; border-top: 1px solid rgba(212,175,55,0.3);}
+    footer a {color: #d4af37; text-decoration: underline; margin: 0 5px;}
+
+    @media (max-width: 768px) {
+      .hero h1 {font-size: 2.2rem;}
+      section {padding: 60px 5%;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LifeTag</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#vision">Vision</a>
+      <a href="#founder">Founder</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>LifeTag</h1>
+    <p>Instant Health ID for Emergencies — Your secure digital health identity accessible by verified doctors, saving time and saving lives.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Get in Touch</button>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About LifeTag</h2>
+    <div class="content">
+      <p>LifeTag is a digital health identity platform that stores critical medical information securely. In emergency situations, doctors can verify their identity and instantly access your records to provide immediate, informed care. Our mission is to make every second count when it matters most.</p>
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2 class="section-title">Our Vision & Mission</h2>
+    <div class="content">
+      <p><strong>Vision:</strong> To revolutionize emergency healthcare with secure, instant access to medical data.</p>
+      <p><strong>Mission:</strong> To empower individuals and healthcare professionals through safe, technology-driven solutions that save lives.</p>
+    </div>
+  </section>
+
+  <section id="founder">
+    <h2 class="section-title">Founder</h2>
+    <div class="founder">
+      <img src="C:\Users\16692\Downloads\WhatsAppImage2025-02-10at14.18.50_621a7369.png" alt="Founder Photo">
+      <h3>Chappidi Venkata Prasad</h3>
+      <p>Founder & Innovator, LifeTag<br>Engineering student passionate about healthcare innovation and digital transformation. Creating solutions that connect people and doctors securely when time is critical.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="content">
+      <p>Get in touch for collaborations, partnerships, or inquiries.</p>
+      <p>Email: <a href="mailto:venkatprivate0102@gmail.com">venkatprivate0102@gmail.com</a></p>
+      <p>LinkedIn: <a href="www.linkedin.com/in/c-venkata-prasad-70a835172">linkedin.com/in/c-venkata-prasad-70a835172</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 LifeTag | Designed with care by Chappidi Venkata Prasad</p>
+  </footer>
+</body>
+</html>
